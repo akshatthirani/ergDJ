@@ -2,6 +2,16 @@
 <html>
 <head>  
 
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-animate.js"></script>
+  
+
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -11,11 +21,13 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  
 
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-animate.js"></script>
+  
   <script src="script.js"></script>
+
+
+
 
 </head>
 
@@ -27,7 +39,7 @@
 		</div>
 		<div id="para">
 			<br>
-			<p>meh</p>
+			<p>rule the erg</p>
 		</div>
 	</div>
 
@@ -37,9 +49,12 @@
 
 	<div id="spot">
 		<div ng-controller="ExampleController">
+			<p>stroke rating</p>
 		 	<select ng-model="template" ng-options="t.name for t in templates">
 		   		<option value=""> </option>
 		  	</select>
+
+		  	<br> <br>
 		    <div ng-include="template.url"></div>
 		</div>
 	</div>
