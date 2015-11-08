@@ -1,0 +1,38 @@
+body {
+	text-align: center;;
+}
+
+
+#title {
+	height: auto;
+	padding: 30px;
+	background-color: #7fe5e4;
+	
+	font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif; 
+	font-weight: 300;
+}
+
+#main  h1{
+	font-size: 90px;
+	font-weight: 200;
+
+}
+
+#para p{
+		font-size: 35px;
+		font-style: italic;
+}
+
+#about {
+	background-color: #cafffe;
+	padding: 30px;
+}
+
+#about p{
+	font-size: 25px;
+	font-weight: 150;
+}
+
+#spot {
+	padding-top: 20px;
+}

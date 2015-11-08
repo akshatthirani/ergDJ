@@ -2,25 +2,62 @@
 <html>
 <head>  
 
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-animate.js"></script>
   <script src="script.js"></script>
+
 </head>
 
 <title>ergDJ</title>
 <body ng-app="includeExample">
+	<div id="title">
+		<div id="main">
+			<h1>ergDJ</h1>			
+		</div>
+		<div id="para">
+			<br>
+			<p>meh</p>
+		</div>
+	</div>
 
-<h1>ergDJ</h1>
-<p>Let's do this</p>
+	<div id="about">
+		<p>Complete challenging erg workouts using stroke rate-specified playlists. Never erg in boredom again!</p> 
+	</div>
 
-
-<div ng-controller="ExampleController">
-
- 	<select ng-model="template" ng-options="t.name for t in templates">
-   		<option value=""> </option>
-  	</select>
-    <div ng-include="template.url"></div>
-</div>
+	<div id="spot">
+		<div ng-controller="ExampleController">
+		 	<select ng-model="template" ng-options="t.name for t in templates">
+		   		<option value=""> </option>
+		  	</select>
+		    <div ng-include="template.url"></div>
+		</div>
+	</div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
